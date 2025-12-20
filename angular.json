@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "frxncismor-portfolio": {
+    "vaneybr-portfolio": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -57,10 +57,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "frxncismor-portfolio:build:production"
+              "buildTarget": "vaneybr-portfolio:build:production"
             },
             "development": {
-              "buildTarget": "frxncismor-portfolio:build:development"
+              "buildTarget": "vaneybr-portfolio:build:development"
             }
           },
           "defaultConfiguration": "development"

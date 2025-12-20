@@ -1,0 +1,12 @@
+
+:host ::ng-deep .p-card {
+  border: 1px solid rgb(209 213 219);
+  border-radius: 0.75rem;
+  overflow: hidden;
+  background-color: rgb(255 255 255);
+}
+
+:host-context(.dark) ::ng-deep .p-card {
+  border-color: #ffffffb3;
+  background-color: rgba(255, 255, 255, 0.04);
+}

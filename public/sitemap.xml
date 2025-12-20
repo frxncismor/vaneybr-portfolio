@@ -2,37 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://frxncismor.dev/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://frxncismor.dev/?lang=en" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://frxncismor.dev/?lang=es" />
+    <loc>https://vaneybr.dev/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vaneybr.dev/?lang=en" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://vaneybr.dev/?lang=es" />
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://frxncismor.dev/home</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://frxncismor.dev/home?lang=en" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://frxncismor.dev/home?lang=es" />
+    <loc>https://vaneybr.dev/home</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vaneybr.dev/home?lang=en" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://vaneybr.com/home?lang=es" />
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://frxncismor.dev/certifications</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://frxncismor.dev/certifications?lang=en" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://frxncismor.dev/certifications?lang=es" />
+    <loc>https://vaneybr.com/certifications</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vaneybr.com/certifications?lang=en" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://vaneybr.com/certifications?lang=es" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://frxncismor.dev/price-quote-generator</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://frxncismor.dev/price-quote-generator?lang=en" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://frxncismor.dev/price-quote-generator?lang=es" />
+    <loc>https://vaneybr.com/price-quote-generator</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vaneybr.com/price-quote-generator?lang=en" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://vaneybr.com/price-quote-generator?lang=es" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://frxncismor.dev/blog</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://frxncismor.dev/blog?lang=en" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://frxncismor.dev/blog?lang=es" />
+    <loc>https://vaneybr.com/blog</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vaneybr.com/blog?lang=en" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://vaneybr.com/blog?lang=es" />
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>

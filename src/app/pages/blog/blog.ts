@@ -112,16 +112,16 @@ export class Blog implements OnInit {
     const isEnglish = locale === 'en';
 
     const title = isEnglish
-      ? 'Blog - Francisco Moreno | Portfolio'
-      : 'Blog - Francisco Moreno | Portafolio';
+      ? 'Blog - Vanessa Yebra | Portfolio'
+      : 'Blog - Vanessa Yebra | Portafolio';
 
     const description = isEnglish
-      ? 'Thoughts about web development, frontend architecture, Angular, React, TypeScript, and modern technology. Learn from a Senior Web UI Engineer with 6+ years of experience.'
-      : 'Pensamientos sobre desarrollo web, arquitectura frontend, Angular, React, TypeScript y tecnología moderna. Aprende de un Ingeniero Web UI Senior con más de 6 años de experiencia.';
+      ? 'Thoughts about data analysis, business intelligence, and technology insights from a Data Analyst perspective.'
+      : 'Pensamientos sobre análisis de datos, inteligencia de negocios e insights tecnológicos desde la perspectiva de un Analista de Datos.';
 
     const keywords = isEnglish
-      ? 'blog, web development, frontend development, Angular, React, TypeScript, JavaScript, UI engineering, software development, programming tutorials, tech blog, Francisco Moreno'
-      : 'blog, desarrollo web, desarrollo frontend, Angular, React, TypeScript, JavaScript, ingeniería UI, desarrollo de software, tutoriales de programación, blog tecnológico, Francisco Moreno';
+      ? 'blog, data analysis, business intelligence, data visualization, Power BI, Python, R, SQL, technology insights, Vanessa Yebra'
+      : 'blog, análisis de datos, inteligencia de negocios, visualización de datos, Power BI, Python, R, SQL, insights tecnológicos, Vanessa Yebra';
 
     this.seoService.updateSEO({
       title,
@@ -137,15 +137,15 @@ export class Blog implements OnInit {
       '@type': 'Blog',
       name: title,
       description,
-      url: 'https://frxncismor.dev/blog',
+      url: 'https://vaneybr.com/blog',
       author: {
         '@type': 'Person',
-        name: 'Francisco Moreno',
-        url: 'https://frxncismor.dev',
+        name: 'Vanessa Yebra',
+        url: 'https://vaneybr.com',
       },
       publisher: {
         '@type': 'Person',
-        name: 'Francisco Moreno',
+        name: 'Vanessa Yebra',
       },
       inLanguage: locale === 'en' ? 'en-US' : 'es-ES',
     };

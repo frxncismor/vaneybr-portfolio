@@ -1,9 +1,10 @@
 import { Component, AfterViewInit, OnDestroy } from '@angular/core';
 import { TranslatePipe } from '@pipes/translate.pipe';
+import { MarkdownPipe } from '@pipes/markdown.pipe';
 
 @Component({
   selector: 'app-about-me',
-  imports: [TranslatePipe],
+  imports: [TranslatePipe, MarkdownPipe],
   templateUrl: './about-me.html',
   styleUrl: './about-me.css',
 })

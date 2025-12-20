@@ -360,8 +360,8 @@ export class PriceQuoteGeneration implements OnInit, AfterViewInit, OnDestroy {
     const locale = this.i18nService.getLocale();
     const url =
       locale === 'en'
-        ? 'https://calendly.com/frxncismor/30min'
-        : 'https://calendly.com/frxncismor/tell-me-your-idea-clone';
+        ? 'https://calendly.com/vaneybr/30min'
+        : 'https://calendly.com/vaneybr/tell-me-your-idea-clone';
     window.open(url, '_blank');
   }
 
@@ -401,8 +401,8 @@ export class PriceQuoteGeneration implements OnInit, AfterViewInit, OnDestroy {
     this.seoService.updateSEO({
       title:
         locale === 'es'
-          ? 'Generador de Cotizaciones - Francisco Moreno | Portfolio'
-          : 'Price Quote Generator - Francisco Moreno | Portfolio',
+          ? 'Generador de Cotizaciones - Vanessa Yebra | Portfolio'
+          : 'Price Quote Generator - Vanessa Yebra | Portfolio',
       description:
         locale === 'es'
           ? 'Genera cotizaciones personalizadas para proyectos web. Calcula precios y tiempos de entrega para Landing Pages, E-commerce y aplicaciones SaaS.'

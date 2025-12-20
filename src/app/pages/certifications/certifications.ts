@@ -30,14 +30,14 @@ export class Certifications implements OnInit, AfterViewInit, OnDestroy {
     this.seoService.updateSEO({
       title:
         locale === 'es'
-          ? 'Certificaciones - Francisco Moreno | Portfolio'
-          : 'Certifications - Francisco Moreno | Portfolio',
+          ? 'Certificaciones - Vanessa Yebra | Portfolio'
+          : 'Certifications - Vanessa Yebra | Portfolio',
       description:
         locale === 'es'
-          ? 'Certificaciones profesionales de Francisco Moreno en tecnologías web, desarrollo frontend, backend y herramientas de desarrollo.'
-          : 'Professional certifications of Francisco Moreno in web technologies, frontend development, backend and development tools.',
+          ? 'Certificaciones profesionales de Vanessa Yebra en analisis de datos y visualización.'
+          : 'Professional certifications of Vanessa Yebra in data analysis and visualization.',
       keywords:
-        'Francisco Moreno, Certifications, LinkedIn Certifications, Web Development Certifications, Angular, React, TypeScript, Professional Certifications, developer en monterrey, developer en woodlands, developer in woodlands, developer near woodlands, desarrollador cerca de monterrey, desarrollador en monterrey',
+        'Vanessa Yebra, Certifications, LinkedIn Certifications, Data Analysis Certifications, Python, SQL, Power BI, Tableau, Data Visualization, Business Intelligence, Professional Certifications, developer en monterrey, developer en guanajuato, developer en leon, developer en celaya, developer en salamanca, developer en irapuato, developer en dolores hidalgo, developer en san francisco, desarrollador cerca de monterrey, desarrollador en monterrey',
       url: '/certifications',
       type: 'website',
     });

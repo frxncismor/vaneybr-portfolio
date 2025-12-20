@@ -9,6 +9,7 @@ export class ThemeService {
   private readonly isBrowser = isPlatformBrowser(this.platformId);
 
   private readonly DARK_CLASS = 'dark';
+  private readonly THEME_STORAGE_KEY = 'theme';
 
   // Signal to track current theme
   readonly currentTheme = signal<'light' | 'dark'>('light');
@@ -21,12 +22,20 @@ export class ThemeService {
       return;
     }
 
-    // Get system preference
-    const systemPreference = this.getSystemPreference();
+    const savedTheme = this.getSavedTheme();
+    const initialTheme = savedTheme ?? this.getSystemPreference();
+    this.currentTheme.set(initialTheme);
+    this.applyTheme(initialTheme);
+  }
 
-    // Always use system preference
-    this.currentTheme.set(systemPreference);
-    this.applyTheme(systemPreference);
+  toggleTheme(): void {
+    if (!this.isBrowser) {
+      return;
+    }
+
+    const nextTheme: 'light' | 'dark' = this.currentTheme() === 'dark' ? 'light' : 'dark';
+    this.saveTheme(nextTheme);
+    this.applyTheme(nextTheme);
   }
 
   /**
@@ -67,11 +76,19 @@ export class ThemeService {
       return;
     }
 
+    // If user explicitly selected a theme, do not override it with system changes.
+    if (this.getSavedTheme()) {
+      return;
+    }
+
     const mediaQuery = globalThis.matchMedia('(prefers-color-scheme: dark)');
 
     // Use addEventListener (standard) or addListener (legacy) for browser support
     const handler = (e: MediaQueryListEvent | MediaQueryList) => {
-      // Always apply system preference
+      // Apply system preference only if user hasn't overridden theme.
+      if (this.getSavedTheme()) {
+        return;
+      }
       const isDark = 'matches' in e ? e.matches : (e as MediaQueryList).matches;
       const newTheme = isDark ? 'dark' : 'light';
       this.currentTheme.set(newTheme);
@@ -85,5 +102,22 @@ export class ThemeService {
       // eslint-disable-next-line deprecation/deprecation
       mediaQuery.addListener(handler);
     }
+  }
+
+  private getSavedTheme(): 'light' | 'dark' | null {
+    if (!this.isBrowser) {
+      return null;
+    }
+
+    const value = localStorage.getItem(this.THEME_STORAGE_KEY);
+    return value === 'dark' || value === 'light' ? value : null;
+  }
+
+  private saveTheme(theme: 'light' | 'dark'): void {
+    if (!this.isBrowser) {
+      return;
+    }
+
+    localStorage.setItem(this.THEME_STORAGE_KEY, theme);
   }
 }

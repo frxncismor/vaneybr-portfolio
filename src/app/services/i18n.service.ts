@@ -32,11 +32,23 @@ export class I18nService {
   readonly t = computed(() => {
     const locale = this.currentLocale();
     const loaded = this.translationsLoaded();
-    return (key: string): string => {
+    return (key: string, params?: Record<string, string>): string => {
       if (!loaded) {
         return key;
       }
-      return this.getTranslation(key, locale);
+      let translation = this.getTranslation(key, locale);
+      
+      // Replace parameters if provided
+      if (params) {
+        const escapeRegExp = (value: string): string => value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
+        Object.entries(params).forEach(([paramKey, paramValue]) => {
+          const pattern = new RegExp(`\\{\\{\\s*${escapeRegExp(paramKey)}\\s*\\}\\}`, 'g');
+          translation = translation.replace(pattern, String(paramValue));
+        });
+      }
+      
+      return translation;
     };
   });
 

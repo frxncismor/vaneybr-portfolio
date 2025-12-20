@@ -135,21 +135,21 @@
 
 /* Links */
 .markdown-content a {
-  color: rgb(17 24 39);
+  color: var(--color-primary);
   text-decoration: underline;
   transition: color 0.2s;
 }
 
 .markdown-content a:hover {
-  color: rgb(55 65 81);
+  color: rgb(190 24 93);
 }
 
 .dark .markdown-content a {
-  color: rgb(255 255 255);
+  color: var(--color-primary);
 }
 
 .dark .markdown-content a:hover {
-  color: rgb(209 213 219);
+  color: rgb(244 114 182);
 }
 
 /* Code blocks */

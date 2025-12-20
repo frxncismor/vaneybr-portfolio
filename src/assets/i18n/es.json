@@ -21,11 +21,11 @@
   },
   "home": {
     "hero": {
-      "title": "Hola, soy Francisco.",
-      "subtitle": "Senior Web UI Engineer / Desarrollador Frontend.",
-      "available": "Disponible para trabajar",
-      "downloadResume": "Descargar CV",
-      "description": "La mayoría de los devs front-end o se mueven rápido y rompen cosas, o hacen código tan \"perfecto\" que nunca se lanza. Yo hago ambas: envío rápido y mantengo el código limpio. Más de <strong>6 años</strong> convirtiendo ideas en aplicaciones web reales. Actualmente vivo en <strong>The Woodlands, Texas</strong> y estoy autorizado para trabajar en Estados Unidos. Disponible para <strong>posiciones full-time</strong> y <strong>proyectos freelance</strong>."
+      "welcome": "Hola! soy {{name}}",
+      "jobTitle": "{{seniority}} Data Analyst",
+      "contactMe": "contáctame",
+      "downloadResume": "mi currículum",
+      "description": "Bienvenido a mi portafolio. Soy una analista de datos apasionada por el análisis y la visualización de datos. Me encanta convertir datos en insights y crear interfaces hermosas y funcionales que ayuden a las personas a entender la información."
     },
     "techStack": {
       "title": "Stack Tecnológico",
@@ -177,50 +177,25 @@
       }
     },
     "about": {
+      "introduction": "Introducción",
       "title": "Sobre mí",
-      "description": "Soy Francisco, ingeniero de interfaces web de Monterrey, México, ahora viviendo en The Woodlands, TX, con autorización para trabajar en USA.<br><br>Lo que realmente hago es esto: tomo frontends desordenados o frágiles y los convierto en sistemas escalables y mantenibles. No se trata solo de \"que se vea bonito\": me enfoco en arquitectura, manejo de estado, rendimiento y experiencia del desarrollador. <strong class=\"font-bold text-red-400 dark:text-red-300\">Angular</strong> es mi fuerte, también trabajo con <strong class=\"font-bold text-blue-400 dark:text-blue-300\">React</strong>, y soy un aprendiz muy rápido: adopto nuevas herramientas, librerías y patrones con facilidad y los llevo a producción de forma segura.<br><br>Muchos desarrolladores entienden el framework, pero no el producto. Yo me preocupo por ambos. Mientras otros discuten sobre la librería de moda, yo estoy lanzando experiencias rápidas, accesibles, optimizadas para <strong class=\"font-bold\">SEO</strong> y alineadas al negocio.<br><br>He lanzado productos <strong class=\"font-bold\">SaaS</strong> como <strong class=\"font-bold\">Shelfie</strong> (mejora de fotos de productos con <strong class=\"font-bold\">IA</strong> para pequeños comercios) además de construir soluciones corporativas para marcas globales a través de <strong class=\"font-bold text-green-400 dark:text-green-300\">Globant</strong> en sectores como retail, viajes y medios. Mi <strong class=\"font-bold\">GitHub</strong> y mis proyectos personales son pruebas, no promesas.<br><br>¿El resultado? Frontends fáciles de mantener, agradables de usar y con impacto directo en el negocio.<br><br>Cuando no estoy programando, normalmente estoy probando herramientas nuevas, jugando videojuegos o ayudando a amigos con sus proyectos y configuraciones.<br><br>No solo construyo componentes. Construyo sistemas que permiten a los equipos lanzar más rápido sin perder calidad."
+      "description": "Soy estudiante de último año de la **Licenciatura en Sistemas de Información Administrativos**, con un fuerte interés en **Business Intelligence** y **Ciberseguridad**. Domino **Java, Python y R**, y tengo experiencia gestionando **bases de datos relacionales y no relacionales**. He desarrollado **procesos ETL** para limpiar, transformar e integrar datos de múltiples fuentes, y utilizo **Power BI** para crear dashboards interactivos que generan insights accionables. También cuento con conocimientos avanzados de **SQL** para extracción y análisis de datos, y bases en **Tableau**. Además, tengo experiencia práctica automatizando procesos y reportes con **Power Automate**, creando apps internas con **Power Apps**, y colaborando con flujos de trabajo en **SharePoint**. Soy una persona analítica, proactiva y orientada a la mejora continua, en búsqueda de una oportunidad para aplicar y seguir creciendo en un entorno profesional.",
+      "languages": "Idiomas",
+      "education": "Educación",
+      "degree": "Licenciatura en Sistemas de Información Administrativos",
+      "tools": "Herramientas que uso"
     }
   },
   "workExperience": {
     "title": "Experiencia laboral",
-    "description": "He lanzado productos SaaS como Shelfie (mejora de fotos de productos con IA para pequeños comercios) e Invitamex (plataforma de invitaciones digitales con analíticas), además de construir soluciones corporativas para marcas globales a través de Globant en sectores como retail, viajes y medios. Mi GitHub y mis proyectos personales son pruebas, no promesas.",
     "items": [
       {
-        "title": "Freelance",
-        "role": "Consultor",
+        "title": "CEVA Logistics",
+        "role": "BPE Intern",
         "at": "en",
-        "date": "2025 - Actualidad",
-        "description": "Ayudo a startups y negocios pequeños a diseñar, arquitectar y lanzar experiencias web modernas."
-      },
-      {
-        "title": "Shelfie",
-        "role": "Fundador",
-        "at": "en",
-        "date": "2025 - Actualidad",
-        "description": "SaaS de IA que ayuda a pequeños negocios a mejorar sus fotos de producto y presencia online, usando React, Supabase y Stripe.",
-        "link": "https://shelfie.com.mx"
-      },
-      {
-        "title": "Globant",
-        "role": "Desarrollador",
-        "at": "en",
-        "date": "2020 - 2025",
-        "description": "Construcción de soluciones corporativas para marcas globales a través de Globant en sectores como retail, viajes y medios.",
-        "link": "https://globant.com"
-      },
-      {
-        "title": "ContralorMX",
-        "role": "Desarrollador",
-        "at": "en",
-        "date": "2019 - 2020",
-        "description": "Desarrollo de la plataforma de control de gastos y presupuestos para la empresa ContralorMX."
-      },
-      {
-        "title": "Handa Systems",
-        "role": "Desarrollador",
-        "at": "en",
-        "date": "2019 - 2019",
-        "description": "Construcción de soluciones corporativas para marcas globales a través de Handa Systems en retail."
+        "date": "Agosto 2025 - Actualidad",
+        "description": "Desarrollé y automaticé dashboards y flujos de reporting (Power BI/Power Automate/Power Apps) para KPIs operativos, headcount y finanzas, habilitando decisiones más rápidas en 11 equipos al reducir el turnaround a actualizaciones el mismo día.",
+        "link": "https://www.cevalogistics.com"
       }
     ]
   },
@@ -239,7 +214,7 @@
         "title": "Shelfie",
         "description": "SaaS de IA que ayuda a pequeños negocios a mejorar sus fotos de producto y presencia online, usando React, Supabase y Stripe.",
         "link": "https://shelfie.com.mx",
-        "code": "https://github.com/frxncismor/shelfie-public",
+        "code": "https://github.com/vaneybr/shelfie-public",
         "image": "/shelfie.png",
         "technologies": [
           {
@@ -355,7 +330,7 @@
     },
     "pdf": {
       "header": {
-        "email": "Email: frxncismor@gmail.com",
+        "email": "Email: vaneybr@gmail.com",
         "phone": "Teléfono: +52 812 395 1887"
       }
     }
@@ -372,7 +347,7 @@
         "issued": "nov. 2025",
         "credentialId": "42a4173d-1e97-4f62-bd06-0e5b02b208d3",
         "skills": ["React.js", "JavaScript", "Desarrollo Frontend"],
-        "certificateUrl": "https://platzi.com/p/Frxncismor/curso/11887-reactjs/diploma/detalle/"
+        "certificateUrl": "https://platzi.com/p/vaneybr/curso/11887-reactjs/diploma/detalle/"
       },
       {
         "name": "Certificado EF SET Inglés 72/100 (C2 Proficiente)",
@@ -390,7 +365,7 @@
         "issued": "sept. 2023",
         "credentialId": "ce686fb8-fa98-40ec-8471-60c8c4360eb3",
         "skills": ["Arquitectura Frontend", "Frameworks", "Arquitectura de Software"],
-        "certificateUrl": "https://platzi.com/p/Frxncismor/curso/4623-course/diploma/detalle/"
+        "certificateUrl": "https://platzi.com/p/vaneybr/curso/4623-course/diploma/detalle/"
       },
       {
         "name": "Audiocurso de Historia de Bitcoin y Criptomonedas",
@@ -399,7 +374,7 @@
         "issued": "feb. 2022",
         "credentialId": "279fda99-5750-4f40-9886-22a13c934061",
         "skills": ["Blockchain", "Criptomonedas", "Bitcoin"],
-        "certificateUrl": "https://platzi.com/p/Frxncismor/curso/2443-historia-bitcoin/diploma/detalle/"
+        "certificateUrl": "https://platzi.com/p/vaneybr/curso/2443-historia-bitcoin/diploma/detalle/"
       },
       {
         "name": "Curso de Ethereum para Developers",
@@ -408,7 +383,7 @@
         "issued": "feb. 2022",
         "credentialId": "6eb2f6ae-65d7-40b3-90fd-42d8ec875aa4",
         "skills": ["Ethereum", "Blockchain", "Smart Contracts", "Solidity"],
-        "certificateUrl": "https://platzi.com/p/Frxncismor/curso/2560-ethereum-developers/diploma/detalle/"
+        "certificateUrl": "https://platzi.com/p/vaneybr/curso/2560-ethereum-developers/diploma/detalle/"
       },
       {
         "name": "Conviértete en desarrollador Blockchain con Ethereum",
@@ -426,7 +401,7 @@
         "issued": "sept. 2021",
         "credentialId": "7b4ace68-d05c-4b67-a818-83939e0a49fb",
         "skills": ["JavaScript", "Motor V8", "Internos del Navegador", "Rendimiento"],
-        "certificateUrl": "https://platzi.com/p/Frxncismor/curso/1798-javascript-navegador/diploma/detalle/"
+        "certificateUrl": "https://platzi.com/p/vaneybr/curso/1798-javascript-navegador/diploma/detalle/"
       },
       {
         "name": "Audiocurso de Renta y Declaración de Impuestos en Criptomonedas",
@@ -435,7 +410,7 @@
         "issued": "ago. 2021",
         "credentialId": "168f3a14-cb04-4491-a759-8c1f0fed486f",
         "skills": ["Criptomonedas", "Fiscalidad", "Planificación Financiera"],
-        "certificateUrl": "https://platzi.com/p/Frxncismor/curso/2448-impuestos-criptomonedas/diploma/detalle/"
+        "certificateUrl": "https://platzi.com/p/vaneybr/curso/2448-impuestos-criptomonedas/diploma/detalle/"
       },
       {
         "name": "Curso de Estructuras de Datos con JavaScript",
@@ -449,7 +424,7 @@
           "JavaScript",
           "Ciencias de la Computación"
         ],
-        "certificateUrl": "https://platzi.com/p/Frxncismor/curso/2156-estructuras-datos/diploma/detalle/"
+        "certificateUrl": "https://platzi.com/p/vaneybr/curso/2156-estructuras-datos/diploma/detalle/"
       },
       {
         "name": "Curso de Single Page Application con JavaScript Vanilla",
@@ -593,7 +568,7 @@
         "issued": "jul. 2020",
         "credentialId": "",
         "skills": ["Diseño Responsive", "CSS", "HTML", "Desarrollo Web", "freeCodeCamp"],
-        "certificateUrl": "https://www.freecodecamp.org/certification/frxncismor/responsive-web-design"
+        "certificateUrl": "https://www.freecodecamp.org/certification/vaneybr/responsive-web-design"
       },
       {
         "name": "Curso Profesional de JavaScript",

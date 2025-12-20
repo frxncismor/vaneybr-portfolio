@@ -1,4 +1,4 @@
-<p-menubar
+<!-- <p-menubar
   class="menubar fixed z-10 left-0 md:left-2.5 right-0 md:right-2.5 top-0 md:top-2.5"
   [model]="items()"
 >
@@ -12,4 +12,54 @@
       </button>
     </div>
   </ng-template>
-</p-menubar>
+</p-menubar> -->
+
+<nav class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50">
+  <div class="flex items-center gap-2">
+    <img src="./logo.svg" alt="Logo" class="w-8">
+    <h1 class="unifrakturcook-bold text-xl logo">Vanessa Yebra</h1>
+  </div>
+
+  <ul
+    class="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 dark:border-white/50 bg-white shadow-sm dark:border dark:border-[#ffffffb3] dark:bg-(--color-dark-theme) dark:border-solid light:border-none"
+  >
+    @for (item of items(); track item.label) {
+    @if (item.routerLink) {
+        <li><a [routerLink]="item.routerLink">{{ item.label }}</a></li>
+      }
+    }
+  </ul>
+  <div class="flex items-center gap-4">
+    <button
+        (click)="toggleLanguage()"
+        class="cursor-pointer inline-flex items-center justify-center gap-2 px-4 py-1 text-gray-800 transition bg-gray-100 border border-gray-300 rounded-md dark:bg-(--color-dark-theme) dark:border-(--p-menubar-border-color) dark:text-white text-md hover:bg-(--color-primary) hover:border-(--color-primary) hover:text-white dark:hover:bg-gray-100 dark:hover:border-gray-300 dark:hover:text-black group max-w-fit focus:outline-none focus-visible:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-offset-2 active:bg-(--color-primary)"
+      >
+        {{ currentLocale() === 'en' ? 'ES' : 'EN' }}
+      </button>
+    <button (click)="toggleTheme()" class="cursor-pointer">
+      <img src="./moon_icon.png" class="w-6 dark:hidden" />
+      <img src="./sun_icon.png" class="w-6 hidden dark:block" />
+    </button>
+    <button class="block md:hidden ml-3" (click)="openMenu()">
+      <img src="./menu-black.png" class="w-6 dark:hidden" />
+      <img src="./menu-white.png" class="w-6 hidden dark:block" />
+    </button>
+  </div>
+
+  <!---------------mobile menu ------->
+  <ul
+    id="sideMenu"
+    class="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500 font-Ovo dark:bg-darkHover dark:text-white"
+  >
+    <div class="absolute right-6 top-6" (click)="closeMenu()">
+      <img src="./close-black.png" class="w-5 cursor-pointer dark:hidden" />
+      <img src="./close-white.png" class="w-5 cursor-pointer hidden dark:block" />
+    </div>
+
+    @for (item of items(); track item.label) {
+      @if (item.routerLink) {
+        <li><a [routerLink]="item.routerLink" (click)="closeMenu()">{{ item.label }}</a></li>
+      }
+    }
+  </ul>
+</nav>

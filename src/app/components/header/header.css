@@ -13,3 +13,8 @@
     width: 100%;
   }
 }
+
+.logo {
+  -webkit-text-stroke: 0.5px #fc98c9;
+  color: #e2468d;
+}

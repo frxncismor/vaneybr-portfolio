@@ -20,9 +20,9 @@ export class SEOService {
   private readonly title = inject(Title);
   private readonly i18nService = inject(I18nService);
 
-  private readonly baseUrl = 'https://frxncismor.dev';
+  private readonly baseUrl = 'https://vaneybr.com';
   private readonly defaultImage = `${this.baseUrl}/myphoto.webp`;
-  private readonly defaultAuthor = 'Francisco Moreno';
+  private readonly defaultAuthor = 'Vanessa Yebra';
 
   updateSEO(data: SEOData): void {
     const locale = this.i18nService.getLocale();
@@ -61,7 +61,7 @@ export class SEOService {
 
     // Twitter Card
     this.updateMetaTag('name', 'twitter:card', 'summary_large_image');
-    this.updateMetaTag('name', 'twitter:site', '@frxncismor');
+    this.updateMetaTag('name', 'twitter:site', '@vaneybr');
 
     // Language
     this.updateMetaTag('property', 'og:locale', locale === 'es' ? 'es_ES' : 'en_US');

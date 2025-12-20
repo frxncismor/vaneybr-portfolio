@@ -66,13 +66,13 @@ export class BlogDetail implements OnInit {
         : ', desarrollo web, desarrollo frontend, programación');
 
     this.seoService.updateSEO({
-      title: `${post.title} | Francisco Moreno - Blog`,
+      title: `${post.title} | Vanessa Yebra - Blog`,
       description: post.description,
       keywords,
       url: postUrl,
       type: 'article',
       image: imageUrl,
-      author: post.author || 'Francisco Moreno',
+      author: post.author || 'Vanessa Yebra',
     });
 
     // Add structured data for Article
@@ -86,16 +86,16 @@ export class BlogDetail implements OnInit {
       dateModified: post.date.toISOString(),
       author: {
         '@type': 'Person',
-        name: post.author || 'Francisco Moreno',
-        url: 'https://frxncismor.dev',
+        name: post.author || 'Vanessa Yebra',
+        url: 'https://vaneybr.com',
       },
       publisher: {
         '@type': 'Person',
-        name: 'Francisco Moreno',
+        name: 'Vanessa Yebra',
       },
       mainEntityOfPage: {
         '@type': 'WebPage',
-        '@id': `https://frxncismor.dev${postUrl}`,
+        '@id': `https://vaneybr.com${postUrl}`,
       },
       keywords: post.tags.join(', '),
       articleSection: 'Web Development',

@@ -1,4 +1,4 @@
-<div class="min-h-screen bg-white dark:bg-(--color-dark-theme) py-12 md:py-20 px-4">
+<div class="min-h-screen py-12 md:py-20 px-4 text-gray-900 dark:text-white">
   <div class="mx-auto max-w-6xl">
     <!-- Header -->
     <div class="mb-8">
@@ -22,7 +22,7 @@
           [ngModel]="searchQuery()"
           (ngModelChange)="onSearchChange($event)"
           [placeholder]="'blog.search' | translate"
-          class="w-full pl-10 pr-4 py-3 bg-gray-100 dark:bg-(--color-dark-theme) border border-gray-300 dark:border-(--p-menubar-border-color) rounded-lg text-gray-800 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-400 dark:focus:ring-gray-600 transition-colors"
+          class="w-full pl-10 pr-4 py-3 bg-gray-100 dark:bg-white/5 border border-gray-300 dark:border-[#ffffffb3] rounded-lg text-gray-800 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)] focus:border-[var(--color-primary)] transition-colors"
         />
       </div>
 
@@ -35,13 +35,12 @@
           @for (tag of allTags(); track tag) {
             <button
               (click)="selectTag(tag)"
-              [class.bg-gray-900]="selectedTag() === tag"
-              [class.text-white]="selectedTag() === tag"
-              [class.border-gray-700]="selectedTag() === tag"
-              [class.dark:bg-gray-100]="selectedTag() === tag"
-              [class.dark:text-black]="selectedTag() === tag"
-              [class.dark:border-gray-300]="selectedTag() === tag"
-              class="px-3 py-1 text-sm font-medium bg-gray-100 dark:bg-(--color-dark-theme) border border-gray-300 dark:border-(--p-menubar-border-color) text-gray-800 dark:text-white rounded-lg hover:bg-gray-900 hover:text-white hover:border-gray-700 dark:hover:bg-gray-100 dark:hover:text-black dark:hover:border-gray-300 transition-colors"
+              [ngClass]="
+                selectedTag() === tag
+                  ? 'bg-(--color-primary) text-white border border-(--color-primary)'
+                  : 'bg-gray-100 dark:bg-white/5 border border-gray-300 dark:border-[#ffffffb3] text-gray-800 dark:text-white hover:bg-(--color-primary) hover:text-white hover:border-(--color-primary)'
+              "
+              class="px-3 py-1 text-sm font-medium rounded-lg transition-colors"
             >
               {{ tag }}
             </button>
@@ -104,7 +103,7 @@
               <div class="flex flex-wrap gap-2 mb-4">
                 @for (tag of post.tags; track tag) {
                   <span
-                    class="px-2 py-1 text-xs font-medium bg-gray-100 dark:bg-(--color-dark-theme) border border-gray-300 dark:border-(--p-menubar-border-color) text-gray-700 dark:text-gray-300 rounded"
+                    class="px-2 py-1 text-xs font-medium bg-gray-100 dark:bg-white/5 border border-gray-300 dark:border-[#ffffffb3] text-gray-700 dark:text-gray-200 rounded"
                   >
                     {{ tag }}
                   </span>
@@ -115,7 +114,7 @@
             <ng-template #footer>
               <a
                 [routerLink]="['/blog', post.slug]"
-                class="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-gray-800 dark:text-white bg-gray-100 dark:bg-(--color-dark-theme) border border-gray-300 dark:border-(--p-menubar-border-color) hover:bg-gray-900 hover:border-gray-700 hover:text-white dark:hover:bg-gray-100 dark:hover:border-gray-300 dark:hover:text-black rounded-lg transition-colors w-full justify-center"
+                class="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-gray-800 dark:text-white bg-gray-100 dark:bg-white/5 border border-gray-300 dark:border-[#ffffffb3] hover:bg-(--color-primary) hover:border-(--color-primary) hover:text-white rounded-lg transition-colors w-full justify-center"
               >
                 <span>{{ 'blog.readMore' | translate }}</span>
                 <i class="pi pi-arrow-right text-xs"></i>

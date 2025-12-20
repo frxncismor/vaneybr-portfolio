@@ -1,44 +1,56 @@
 /* You can add global styles to this file, and also import other style files */
-@import url('https://fonts.googleapis.com/css2?family=Kedebideri:wght@400;500;600;700;800;900&display=swap');
-@import 'primeicons/primeicons.css';
+@import url('https://fonts.googleapis.com/css2?family=Ovo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&family=UnifrakturMaguntia&display=swap');@import 'primeicons/primeicons.css';
 @import 'tailwindcss';
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
-  --color-dark-theme: #121212;
+  --color-dark-theme: #11001f;
+  --color-primary: #e2468d;
 }
 
-.kedebideri-regular {
-  font-family: 'Kedebideri', sans-serif;
+.ovo-regular {
+  font-family: "Ovo", serif;
   font-weight: 400;
   font-style: normal;
 }
 
-.kedebideri-medium {
-  font-family: 'Kedebideri', sans-serif;
-  font-weight: 500;
+body {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 16px;
+  line-height: 1.5;
+  font-feature-settings: "kern" 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-variation-settings: "slnt" 0;
+  background-color: #ffffff;
+}
+
+html.dark body {
+  background-color: var(--color-dark-theme);
+  color: #ffffff;
+}
+
+.outfit-regular {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
   font-style: normal;
 }
 
-.kedebideri-semibold {
-  font-family: 'Kedebideri', sans-serif;
-  font-weight: 600;
+.unifrakturmaguntia-regular {
+  font-family: "UnifrakturMaguntia", cursive;
+  font-weight: 400;
   font-style: normal;
 }
 
-.kedebideri-bold {
-  font-family: 'Kedebideri', sans-serif;
+
+.unifrakturcook-bold {
+  font-family: "UnifrakturCook", cursive;
   font-weight: 700;
-  font-style: normal;
-}
-
-.kedebideri-extrabold {
-  font-family: 'Kedebideri', sans-serif;
-  font-weight: 800;
-  font-style: normal;
-}
-
-.kedebideri-black {
-  font-family: 'Kedebideri', sans-serif;
-  font-weight: 900;
   font-style: normal;
 }

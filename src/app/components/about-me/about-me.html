@@ -1,4 +1,4 @@
-<section
+<!-- <section
   class="about-section section scroll-m-20 w-full mx-auto container lg:max-w-4xl md:max-w-2xl pb-16 md:pb-26"
   id="about-me"
 >
@@ -14,4 +14,70 @@
       <p [innerHTML]="'home.about.description' | translate"></p>
     </div>
   </div>
-</section>
+</section> -->
+
+<div id="about" class="w-full px-[12%] py-10 scroll-mt-20">
+        <h4 class="text-center mb-2 text-lg font-Ovo">{{ 'home.about.introduction' | translate }}</h4>
+        <h2 class="text-center text-5xl font-Ovo">{{ 'home.about.title' | translate }}</h2>
+        <div class="flex w-full flex-col lg:flex-row gap-20 my-20">
+            <div class="max-w-max mx-auto relative">
+                <img src="./myphoto.jpeg" class="w-64 sm:w-80 rounded-3xl max-w-none">
+
+                <div class="bg-white w-1/2 aspect-square absolute top-[130px] right-0 rounded-full translate-x-1/4 translate-y-1/3 shadow-[0_4px_55px_rgba(149,0,162,0.15)] flex items-center justify-center">
+                    <img src="./logo.svg" class="w-full">
+                </div>
+            </div>
+            <div class="flex-1 max-w-[100%]">
+                <p class="mb-10 max-w-2xl" [innerHTML]="('home.about.description' | translate) | markdown">
+                </p>
+                <ul class="sm:grid-cols-auto gap-6 max-w-2xl flex flex-col sm:flex-row">
+                    <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
+                        <img src="./code-icon.png" class="w-7 mt-3 dark:hidden">
+                        <img src="./code-icon-dark.png" class="w-7 mt-3 hidden dark:block">
+
+                        <h3 class="my-4 font-semibold text-gray-700 dark:text-white">{{ 'home.about.languages' | translate }}</h3>
+                        <p class="text-gray-600 text-sm dark:text-white/80">Python, R, SQL, Java</p>
+                    </li>
+                    <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50">
+                        <img src="./edu-icon.png" class="w-7 mt-3 dark:hidden">
+                        <img src="./edu-icon-dark.png" class="w-7 mt-3 hidden dark:block">
+
+                        <h3 class="my-4 font-semibold text-gray-700 dark:text-white">{{ 'home.about.education' | translate }}</h3>
+                        <p class="text-gray-600 text-sm dark:text-white/80">{{ 'home.about.degree' | translate }}</p>
+                    </li>
+                </ul>
+                <h4 class="my-6 text-gray-700 dark:text-white/80">{{ 'home.about.tools' | translate }}</h4>
+
+                <ul class="flex items-center flex-wrap gap-3 sm:gap-5">
+                    <li class="group relative flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500" tabindex="0" aria-label="Visual Studio Code">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" class="w-5 sm:w-7" alt="Visual Studio Code">
+                        <span class="pointer-events-none absolute bottom-full left-1/2 mb-2 -translate-x-1/2 whitespace-nowrap rounded-md border border-gray-200 bg-white px-2 py-1 text-xs text-gray-900 opacity-0 shadow-sm transition-opacity duration-200 group-hover:opacity-100 group-focus-within:opacity-100 dark:border-[#ffffffb3] dark:bg-(--color-dark-theme) dark:text-white after:content-[''] after:absolute after:top-full after:left-1/2 after:-translate-x-1/2 after:border-4 after:border-transparent after:border-t-white dark:after:border-t-[#11001f]">Visual Studio Code</span>
+                    </li>
+                    <li class="group relative flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500" tabindex="0" aria-label="Power BI">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" class="w-5 sm:w-7" alt="Power BI">
+                        <span class="pointer-events-none absolute bottom-full left-1/2 mb-2 -translate-x-1/2 whitespace-nowrap rounded-md border border-gray-200 bg-white px-2 py-1 text-xs text-gray-900 opacity-0 shadow-sm transition-opacity duration-200 group-hover:opacity-100 group-focus-within:opacity-100 dark:border-[#ffffffb3] dark:bg-(--color-dark-theme) dark:text-white after:content-[''] after:absolute after:top-full after:left-1/2 after:-translate-x-1/2 after:border-4 after:border-transparent after:border-t-white dark:after:border-t-[#11001f]">Power BI</span>
+                    </li>
+                    <li class="group relative flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500" tabindex="0" aria-label="MySQL">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" class="w-5 sm:w-7" alt="MySQL">
+                        <span class="pointer-events-none absolute bottom-full left-1/2 mb-2 -translate-x-1/2 whitespace-nowrap rounded-md border border-gray-200 bg-white px-2 py-1 text-xs text-gray-900 opacity-0 shadow-sm transition-opacity duration-200 group-hover:opacity-100 group-focus-within:opacity-100 dark:border-[#ffffffb3] dark:bg-(--color-dark-theme) dark:text-white after:content-[''] after:absolute after:top-full after:left-1/2 after:-translate-x-1/2 after:border-4 after:border-transparent after:border-t-white dark:after:border-t-[#11001f]">MySQL</span>
+                    </li>
+                    <li class="group relative flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500" tabindex="0" aria-label="MariaDB">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mariadb/mariadb-original.svg" class="w-5 sm:w-7" alt="MariaDB">
+                        <span class="pointer-events-none absolute bottom-full left-1/2 mb-2 -translate-x-1/2 whitespace-nowrap rounded-md border border-gray-200 bg-white px-2 py-1 text-xs text-gray-900 opacity-0 shadow-sm transition-opacity duration-200 group-hover:opacity-100 group-focus-within:opacity-100 dark:border-[#ffffffb3] dark:bg-(--color-dark-theme) dark:text-white after:content-[''] after:absolute after:top-full after:left-1/2 after:-translate-x-1/2 after:border-4 after:border-transparent after:border-t-white dark:after:border-t-[#11001f]">MariaDB</span>
+                    </li>
+                    <li class="group relative flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500" tabindex="0" aria-label="SharePoint">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/e/ec/Microsoft_Office_SharePoint_%282019%E2%80%932025%29.svg" class="w-5 sm:w-7" alt="SharePoint">
+                        <span class="pointer-events-none absolute bottom-full left-1/2 mb-2 -translate-x-1/2 whitespace-nowrap rounded-md border border-gray-200 bg-white px-2 py-1 text-xs text-gray-900 opacity-0 shadow-sm transition-opacity duration-200 group-hover:opacity-100 group-focus-within:opacity-100 dark:border-[#ffffffb3] dark:bg-(--color-dark-theme) dark:text-white after:content-[''] after:absolute after:top-full after:left-1/2 after:-translate-x-1/2 after:border-4 after:border-transparent after:border-t-white dark:after:border-t-[#11001f]">SharePoint</span>
+                    </li>
+                    <li class="group relative flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500" tabindex="0" aria-label="Power Apps">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Powerapps-logo.svg" class="w-5 sm:w-7" alt="Power Apps">
+                        <span class="pointer-events-none absolute bottom-full left-1/2 mb-2 -translate-x-1/2 whitespace-nowrap rounded-md border border-gray-200 bg-white px-2 py-1 text-xs text-gray-900 opacity-0 shadow-sm transition-opacity duration-200 group-hover:opacity-100 group-focus-within:opacity-100 dark:border-[#ffffffb3] dark:bg-(--color-dark-theme) dark:text-white after:content-[''] after:absolute after:top-full after:left-1/2 after:-translate-x-1/2 after:border-4 after:border-transparent after:border-t-white dark:after:border-t-[#11001f]">Power Apps</span>
+                    </li>
+                    <li class="group relative flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500" tabindex="0" aria-label="Power Automate">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Microsoft_Power_Automate.svg" class="w-5 sm:w-7" alt="Power Automate">
+                        <span class="pointer-events-none absolute bottom-full left-1/2 mb-2 -translate-x-1/2 whitespace-nowrap rounded-md border border-gray-200 bg-white px-2 py-1 text-xs text-gray-900 opacity-0 shadow-sm transition-opacity duration-200 group-hover:opacity-100 group-focus-within:opacity-100 dark:border-[#ffffffb3] dark:bg-(--color-dark-theme) dark:text-white after:content-[''] after:absolute after:top-full after:left-1/2 after:-translate-x-1/2 after:border-4 after:border-transparent after:border-t-white dark:after:border-t-[#11001f]">Power Automate</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
