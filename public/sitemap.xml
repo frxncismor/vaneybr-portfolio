@@ -16,20 +16,6 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://vaneybr.com/certifications</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://vaneybr.com/certifications?lang=en" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://vaneybr.com/certifications?lang=es" />
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vaneybr.com/price-quote-generator</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://vaneybr.com/price-quote-generator?lang=en" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://vaneybr.com/price-quote-generator?lang=es" />
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://vaneybr.com/blog</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://vaneybr.com/blog?lang=en" />
     <xhtml:link rel="alternate" hreflang="es" href="https://vaneybr.com/blog?lang=es" />
