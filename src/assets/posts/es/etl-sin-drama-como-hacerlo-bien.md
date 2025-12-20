@@ -159,5 +159,3 @@ Alerta por:
 ## Cierre 💖
 
 ETL bien hecho no es “perfecto”, es **confiable**. Es ese pipeline que puedes re-ejecutar sin pánico, con checks, logs y alertas, sin andar parchando a medianoche 😭🌙.
-
-Si quieres, dime tu caso (fuentes, volumen, si es para Power BI, etc.) y te armo una estructura Bronze/Silver/Gold + estrategia de refresh 🔥

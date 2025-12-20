@@ -2,7 +2,7 @@
 title: "ETL Done Right ✨💅: how to actually do it (no drama)"
 date: 2025-12-04
 description: "A practical (and not boring) guide to doing ETL correctly: reliable, idempotent, validated, observable pipelines ready for BI."
-tags: ["ETL","Data Engineering","Data Quality","Pipelines","SQL","Python","Power BI","Analytics","Observability","Data Governance",]
+tags: ["ETL","Data Engineering","Data Quality","Pipelines","SQL","Python","Power BI","Analytics","Observability","Data Governance"]
 slug: "etl-done-right-how-to-do-it-no-drama"
 author: Vanessa Yebra
 imageUrl: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=2400&q=80"
@@ -159,5 +159,3 @@ Alert on:
 ## Closing 💖
 
 ETL done right isn’t “perfect,” it’s **reliable**. It’s the pipeline you can re-run without panic, with checks, logs, and alerts—so you’re not patching things at midnight 😭🌙.
-
-If you want, tell me your case (sources, volume, Power BI or not, etc.) and I’ll draft a Bronze/Silver/Gold layout + refresh strategy 🔥
