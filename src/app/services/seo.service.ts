@@ -21,7 +21,7 @@ export class SEOService {
   private readonly i18nService = inject(I18nService);
 
   private readonly baseUrl = 'https://vaneybr.com';
-  private readonly defaultImage = `${this.baseUrl}/myphoto.webp`;
+  private readonly defaultImage = `${this.baseUrl}/myphoto.jpeg`;
   private readonly defaultAuthor = 'Vanessa Yebra';
 
   updateSEO(data: SEOData): void {
